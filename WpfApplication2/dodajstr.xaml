@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApplication2.dodajstr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Insertiraj datoteku" Height="291" Width="374" Icon="mpdf.ico">
+    <Grid>
+        <GroupBox Header="Orginalna datoteka" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Height="75" Width="355"/>
+
+        <GroupBox Header="Dateoteka koja se insertira:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="90" Width="355"/>
+
+        <Label Content="Dodaj " HorizontalAlignment="Left" Margin="20,136,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="izaispred" HorizontalAlignment="Left" Margin="80,140,0,0" VerticalAlignment="Top" Width="70">
+            <ComboBoxItem Content="Ispred"/>
+            <ComboBoxItem Content="Iza"/>
+        </ComboBox>
+        <ComboBox x:Name="prvazadnja" HorizontalAlignment="Left" Margin="155,140,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="prvazadnja_SelectionChanged">
+            <ComboBoxItem Content="Prve stranice"/>
+            <ComboBoxItem Content="Zadnje stranice"/>
+            <ComboBoxItem Content="Ostalo"/>
+        </ComboBox>
+        <TextBox x:Name="ostalostr" HorizontalAlignment="Left" Height="23" Margin="290,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0,-0.652" IsEnabled="False"/>
+        <Label x:Name="insertdatlabel" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="345">
+            <Label Content="Label"/>
+        </Label>
+        <Label Content="od stranice" HorizontalAlignment="Left" Margin="20,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="iodstr" HorizontalAlignment="Left" Height="23" Margin="100,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.571,-0.913"/>
+        <Label Content="do stranice" HorizontalAlignment="Left" Margin="146,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idostr" HorizontalAlignment="Left" Height="23" Margin="219,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41"/>
+        <Label x:Name="kroz1" Content="/" HorizontalAlignment="Left" Margin="275,66,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="dodok" Content="OK" HorizontalAlignment="Left" Margin="175,223,0,0" VerticalAlignment="Top" Width="75" Click="dodaj"/>
+        <Button x:Name="dodcancel" Content="Cancel" HorizontalAlignment="Left" Margin="260,223,0,0" VerticalAlignment="Top" Width="75" Click="dodcancel_Click"/>
+
+    </Grid>
+</Window>
